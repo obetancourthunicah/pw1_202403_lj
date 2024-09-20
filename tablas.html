@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas en HTML</title>
+</head>
+
+<body>
+    <h1>Tablas en HTML</h1>
+    <p>
+        tr = table row <br />
+        th = table head <br />
+        td = table data
+    </p>
+    <table border="1">
+        <tr>
+            <th>Col 1</th>
+            <th>Col 2</th>
+            <th>Col 3</th>
+            <th>Col 4</th>
+        </tr>
+        <tr>
+            <td>Dato 1.1</td>
+            <td>Dato 1.2</td>
+            <td>Dato 1.3</td>
+            <td>Dato 1.4</td>
+        </tr>
+        <tr>
+            <td>Dato 2.1</td>
+            <td>Dato 2.2</td>
+            <td>Dato 2.3</td>
+            <td>Dato 2.4</td>
+        </tr>
+    </table>
+
+
+    <table border="1">
+        <thead>
+            <tr></tr>
+                <th colspan="5">
+                    <h3>Tabla de Información de Representantes por Ciudad</h3>
+                </th>
+            </tr>
+            <tr>
+                <th>Pais</th>
+                <th>Ciudad</th>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">HND</td>
+                <td rowspan="2">TEG</td>
+                <td>0001</td>
+                <td>Hugo</td>
+                <td>hugo@demo.com</td>
+            </tr>
+            <tr>
+                
+                
+                <td>0002</td>
+                <td>Paco</td>
+                <td>paco@demo.com</td>
+            </tr>
+            <tr>
+                
+                <td>SPS</td>
+                <td>0003</td>
+                <td>luis</td>
+                <td>luis@demo.com</td>
+            </tr>
+            <tr>
+                <td>SLV</td>
+                <td>SSV</td>
+                <td>0004</td>
+                <td>Lulu</td>
+                <td>lulu@demo.com</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Origen de Datos extraido de ABC en 2024</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
