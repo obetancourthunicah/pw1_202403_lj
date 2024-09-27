@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multimedia en HTML</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <img src="imgs/elder_lg.jpg" alt="elder portrait in greyscales" />
+    <br />
+    <img src="imgs/usuario.svg" alt="icono de usuario" />
+    <br />
+    <svg width="43.579899" height="54.431019" viewBox="0 0 11.530515 14.40154" version="1.1" id="svg1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+        <defs id="defs1" />
+        <g id="layer1" transform="translate(-2.7014089,-1.2658964)">
+            <path id="path1" style="fill:#000000;stroke-width:0.0304087"
+                d="M 8.8847354,1.2658965 A 3.4438707,3.2481805 0 0 0 5.440876,4.5140424 3.4438707,3.2481805 0 0 0 6.6343038,6.9722754 C 2.7834813,8.8209223 2.7014088,15.589216 2.7014088,15.589216 l 11.5099202,0.07822 c 0,0 0.478452,-6.6685667 -3.176773,-8.6241278 A 3.4438707,3.2481805 0 0 0 12.328595,4.5140424 3.4438707,3.2481805 0 0 0 8.8847354,1.2658965 Z" />
+        </g>
+    </svg>
+    <br/>
+    <picture>
+        <source srcset="https://picsum.photos/id/4/1200/648" media="(min-width:1024px)" />
+        <source srcset="https://picsum.photos/id/4/1024/600" media="(min-width:720px)" />
+        <img src="https://picsum.photos/id/4/480/480" alt="Imagen Responsiva" />
+    </picture>
+
+    <picture>
+        <source srcset="imgs/elder_lg.jpg" media="(min-width:1024px)" />
+        <source srcset="imgs/elder_md.jpg" media="(min-width:720px)" />
+        <img src="imgs/elder_sm.jpg" alt="Imagen Responsiva" />
+    </picture>
+
+    <video controls>
+        <source srcset="media/mov_bbb.ogg" type="video/ogg"/>
+        <source src="media/mov_bbb.mp4" type="video/mp4"/>
+    </video>
+
+    <audio controls>
+        <source srcset="media/horse.ogg" type="audio/ogg"/>
+        <source src="media/horse.mp3" type="audio/mp3"/>
+    </audio>
+
+
+</body>
+
+</html>
