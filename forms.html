@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios en HTML</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <h1>Formularios</h1>
+        <form action="forms.html" method="get">
+            <label for="txtNombre">Nombre Completo</label>
+            <input
+                type="text"
+                name="txtName"
+                id="txtNombre"
+                placeholder="Nombre Completo"
+                required
+            />
+            <br/>
+            <label for="intEdad">Edad</label>
+            <input
+                type="number"
+                min="1"
+                max="140"
+                name="edad"
+                placeholder="Edad entre 1  y 140 años"
+                id="intEdad"
+            />
+            <br/>
+            <label for="txtEmail">Correo Electrónico</label>
+            <input
+                type="email"
+                maxlength="128"
+                name="email"
+                id="txtEmail"
+                placeholder="correo@lectro.nico"
+                required
+            />
+            <br/>
+            <label>Opciones de Color</label>
+            <input type="radio" id="opcAzul" value="azul" name="opcColor"/>
+            <label for="opcAzul">Azul</label>
+            &nbsp;
+            <input type="radio" id="opcRojo" value="rojo" name="opcColor"/>
+            <label for="opcRojo">Rojo</label>
+            &nbsp;
+            <input type="radio" id="opcVerde" value="verde" name="opcColor"/>
+            <label for="opcVerde">Verde</label>
+            <br/>
+            <label for="cmbCiudad">Ciudades</label>
+            <select name="ciudad" id="cmbCiudad">
+                <option value="TEG">Tegucigalpa</option>
+                <option value="SPS">San Pedro Sula</option>
+                <option value="CHL">Choluteca</option>
+                <option value="LCB">La Ceiba</option>
+                <option value="SRC">Santa Rosa de Copán</option>
+                <option value="SIG">Siguatepeque</option>
+                <option value="OLC">Olanchito</option>
+                <option value="JUT">Juticalpa</option>
+                <option value="TRJ">Trujillo</option>
+            </select>
+            <br/>
+            <label>Intereses</label><br/>
+            <input type="checkbox" value="1" name="futbol" id="chkFutbol" />
+            <label for="chkFutbol">Futbol</label> <br/>
+            <input type="checkbox" value="1" name="baseball" id="chkBaseball" />
+            <label for="chkBaseBall">BaseBall</label> <br/>
+            <input type="checkbox" value="1" name="basketball" id="chkBasketball" />
+            <label for="chkBasketball">Basketball</label> <br/>
+            <input type="checkbox" value="1" name="volleyball" id="chkVolleyBall" />
+            <label for="chkVolleyBall">VolleyBall</label> <br/>
+            <input type="checkbox" value="1" name="racketball" id="chkRacketBall" />
+            <label for="chkRacketBall">RacketBall</label> <br/>
+            <br/>
+            <label for="txtBiografia">Biografía</label>
+            <br/>
+            <textarea
+                name="biografia"
+                id="txtBiografia"
+                placeholder="Solo aparece si no hay valor en el campo"
+            ></textarea>
+            <br/>
+            <button type="submit" name="btnEnviar" value="Btn1">Enviar</button>
+            <button type="submit" name="btnRechazar" value="Btn2">Rechazar</button>
+
+        </form>
+    </body>
+</html>
