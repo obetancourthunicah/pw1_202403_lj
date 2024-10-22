@@ -4,7 +4,7 @@ body {
     padding: 0px;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,12 +35,32 @@ header nav ul li a:hover{
     background-color: #fff;
 }
 
-ul {
-    color:pink;
-    
+main {
+
 }
 
-p {
-    color:coral;
-    line-height: 3;
+.active {
+    background-color: #fff;
+    color:#000;
+}
+
+.hero-panel {
+    position:relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.hero-panel img{
+    width:100%;
+    height:60vh;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.hero-panel div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: white;
 }
