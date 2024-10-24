@@ -1,4 +1,7 @@
 /* Cascada ???? ->  */
+* {
+    box-sizing: border-box;
+}
 body {
     margin : 0px;
     padding: 0px;
@@ -34,9 +37,32 @@ header nav ul li a:hover{
     color:#333;
     background-color: #fff;
 }
-
+/*
+0-719px mobile
+720 - 1023 tablet
+1024 - 1300 escritorio
+1301 - wide screen
+*/
 main {
+    background-color: aqua;
+}
 
+@media (min-width:720px) {
+    main {
+        background-color: cadetblue;
+    }
+}
+
+@media (min-width:1024px) {
+    main {
+        background-color: #c65555;
+    }
+}
+
+@media (min-width: 1301px) {
+    main {
+        background-color: #6a9b6a;
+    }
 }
 
 .active {
@@ -60,7 +86,27 @@ main {
 
 .hero-panel div {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 25%;
+    left: 75%;
     background-color: white;
+    padding: 1rem;
+    transform: translateX(-50%) translateY(-50%);
+    border: 2px solid #000;
+    width: 200px;
+    margin: 1rem;
 }
+
+.container {
+    max-width: 1024px;
+    margin: 1rem auto;
+    padding:0.5rem 1rem;
+}
+
+
+/*
+    Problema -> trouble -> trbl
+
+    top, right, bottom, left
+
+    Ooh oh, you're in trouble ....
+*/
