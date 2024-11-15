@@ -4,7 +4,9 @@
         <title>Introducción a Javascript</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/slider.js"></script>
         <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/slider.css" />
         <script>
             //alert('Cargando Mensaje desde el bloque script.');
         </script>
@@ -14,7 +16,44 @@
 
         </header>
         <main>
-            <button name="btnEjemplo" onclick="alert('¡¡¡Hola Mundo!!!');">Haz click aquí!!!</button>
+            <section class="slider">
+                <section class="frametrack">
+                    <section class="slide">
+                        <picture>
+                            <source srcset="https://picsum.photos/id/100/1200/720" media="(min-width:1024px)" />
+                            <source srcset="https://picsum.photos/id/100/1024/620" media="(min-width:720px)" />
+                            <img src="https://picsum.photos/id/100/380/380" alt="Slide 1"/>
+                        </picture>
+                        <div class="q2">
+                            <h2>Título Head 1</h2>
+                            <a href="#" class="btn">Comprar Ahora!!!</a>
+                        </div>
+                    </section>
+                    <section class="slide">
+                        <picture>
+                            <source srcset="https://picsum.photos/id/120/1200/720" media="(min-width:1024px)" />
+                            <source srcset="https://picsum.photos/id/120/1024/620" media="(min-width:720px)" />
+                            <img src="https://picsum.photos/id/120/380/380" alt="Slide 1"/>
+                        </picture>
+                        <div class="q2">
+                            <h2>Título Head 2</h2>
+                            <a href="#" class="btn">Comprar Ahora!!!</a>
+                        </div>
+                    </section>
+                    <section class="slide">
+                        <picture>
+                            <source srcset="https://picsum.photos/id/48/1200/720" media="(min-width:1024px)" />
+                            <source srcset="https://picsum.photos/id/48/1024/620" media="(min-width:720px)" />
+                            <img src="https://picsum.photos/id/48/380/380" alt="Slide 1"/>
+                        </picture>
+                        <div class="q2">
+                            <h2>Título Head 3</h2>
+                            <a href="#" class="btn">Comprar Ahora!!!</a>
+                        </div>
+                    </section>
+                </section>
+            </section>
+
         </main>
         <footer>
 

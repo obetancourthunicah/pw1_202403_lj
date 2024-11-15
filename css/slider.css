@@ -1,0 +1,51 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+    width:100vw;
+    height: 90vh;
+}
+.slider .frametrack{
+    position:absolute;
+    top:0px;
+    left:0px;
+    display: flex;
+    flex-direction: row;
+    transition: left 0.5s ease-in-out;
+}
+
+.slider .frametrack .slide{
+    position: relative;
+    width:100vw;
+    height: 90vh;
+}
+
+.slider .frametrack .slide img{
+    display: block;
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.slider .frametrack .slide div {
+    position: absolute;
+    padding:2rem;
+    max-width: 380px;
+    background-color: rgba(255,255,255, 0.8);
+    border-radius: 13px;
+    box-shadow: 3px 3px 5px #000;
+}
+
+.slider .frametrack .slide div.q2 {
+    top: 25%;
+    left: 75%;
+    transform: translate(-50%, 50%);
+}
+
+.slider .frametrack .slide div::before {
+    content: '';
+    width:380px;
+    height:380px;
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(circle, #0000 45%, #000f 48%);
+}

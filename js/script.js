@@ -147,4 +147,6 @@ function onPageLoaded(){
             console.log("Persona Raw: ", JSON.stringify(persona));
         }
     );
+
+    const mySlider = new SliderController();
 }
