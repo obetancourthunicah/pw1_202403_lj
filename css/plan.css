@@ -40,3 +40,15 @@
     width: 160px;
     text-align: center;
 }
+
+.plan .bloque .asignaturas .asignatura.selected {
+    background-color: #66d266;
+}
+
+.plan .bloque .asignaturas .asignatura.requisito {
+    background-color: #d6931f;
+}
+
+.plan .bloque .asignaturas .asignatura.apertura {
+    background-color: #61abff;
+}
